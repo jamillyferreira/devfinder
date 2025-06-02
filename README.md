@@ -31,12 +31,9 @@ Usei **apenas a imagem de amostra** como referência visual e recriei a interfac
 - API do GitHub (`https://api.github.com/users/{username}`)
 
 ## 💡 O que aprendi
-
-### **Manipulação da DOM e Fetch API**
-- Uso de `fetch()` com **async/await** para consumir a API do GitHub, tratando erros com `try/catch` e exibindo estados de loading/erro.
-
 Durante o desenvolvimento, pratiquei e aprendi:
 
+- Uso de `fetch()` com **async/await** para consumir a API do GitHub, tratando erros com `try/catch` e exibindo estados de loading/erro.
 - Manipulação da DOM de forma dinâmica.
 - Trabalhar com **fetch assíncrono** e `try/catch`.
 - Controle de tema usando classes CSS e localStorage.
