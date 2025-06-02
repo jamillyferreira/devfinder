@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- phosphoricon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- SCRIPTJS -->
+    <script src="assets/js/script.js" defer></script>
+    <title>Dev Finder</title>
+  </head>
+  <body>
+    <section class="container">
+      <header class="header">
+        <h1 class="header__title">devfinder</h1>
+        <button class="theme-toggle-btn">
+          <p class="theme-toggle-text">light</p>
+          <i class="ph ph-sun theme-toggle-icon"></i>
+        </button>
+      </header>
+      <div class="search__container">
+        <div class="search__wrapper">
+          <i class="ph ph-magnifying-glass search__icon"></i>
+          <input
+            class="input-search"
+            type="text"
+            placeholder="Pesquisar usuário github..."
+            id="searchInput"
+          />
+          <button type="submit" class="search__button">Buscar</button>
+        </div>
+      </div>
+      <div class="message-error-container hidden">
+        <i class="ph ph-warning-circle messag-error-icon"></i>
+        <h2 class="message-error-text">Ocorreu um erro ao buscar o usuário</h2>
+        <p>Verifique o nome do usuário para obter resultado melhor!</p>
+      </div>
+      <main class="profile-card">
+        <div class="profile-card__header">
+          <img src="" alt="imagem do perfil" class="profile-card__avatar" />
+          <div class="profile-card__info">
+            <h1 class="profile-card__name">Nome usuário</h1>
+            <a href="#" class="profile-card__username"></a>
+            <p class="profile-card__joined" id="created-at"></p>
+          </div>
+        </div>
+
+        <div class="profile-card__content">
+          <p class="profile-card__bio"></p>
+          <div class="profile-card__stats">
+            <div class="profile-card__stat">
+              <span class="profile-card__stat-label">Repos</span>
+              <output class="profile-card__stat-value" id="repo-count"
+                >8</output
+              >
+            </div>
+            <div class="profile-card__stat">
+              <span class="profile-card__stat-label">Seguidores</span>
+              <output class="profile-card__stat-value" id="followers-count"
+                >3938</output
+              >
+            </div>
+            <div class="profile-card__stat">
+              <span class="profile-card__stat-label">Seguindo</span>
+              <output class="profile-card__stat-value" id="following-count"
+                >9</output
+              >
+            </div>
+          </div>
+          <ul class="profile-card__links">
+            <li class="profile-card__link">
+              <i class="ph ph-map-pin"></i>
+              <span class="profile-card__text" id="user-location"></span>
+            </li>
+
+            <li class="profile-card__link profile-card__link--disabled">
+              <i class="ph ph-twitter-logo"></i>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="profile-card__text"
+                id="user-twitter"
+              ></a>
+            </li>
+
+            <li class="profile-card__link">
+              <i class="ph ph-link"></i>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="profile-card__text"
+                id="user-blog"
+              ></a>
+            </li>
+            <li class="profile-card__link">
+              <i class="ph ph-building-office"></i>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="profile-card__text"
+                id="user-company"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

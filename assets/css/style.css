@@ -1,0 +1,315 @@
+/* MOBILE-FIRST */
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background: #141c2f;
+  --color-surface: #1f2a48;
+  --color-primary: #0079fe;
+  --color-text: #feffff;
+  --color-text-secondary: #b9bec4;
+}
+
+body.mode-light {
+  --color-background: #f4f4f4;
+  --color-surface: #ffffff;
+  --color-primary: #0079fe;
+  --color-text: #363636;
+  --color-text-secondary: #495e77;
+}
+
+body {
+  font-family: "Cascadia Mono", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  gap: 10px;
+}
+.theme-toggle-text {
+  font-family: "Cascadia Mono", sans-serif;
+  letter-spacing: 2px;
+  color: var(--color-text);
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.theme-toggle-icon {
+  font-size: 17px;
+  color: var(--color-text);
+}
+.search__container {
+  margin-top: 1.5rem;
+  background-color: var(--color-surface);
+  padding: 10px;
+  border-radius: 8px;
+}
+.search__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 12px;
+}
+.input-search {
+  font-family: "Cascadia Mono", sans-serif;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  caret-color: var(--color-text);
+}
+.input-search::placeholder {
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+.search__icon {
+  color: var(--color-primary);
+  font-size: 22px;
+}
+.search__button {
+  font-family: "cascadia mono", sans-serif;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-feedback {
+  margin-top: 1rem;
+  background-color: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 15px 0;
+}
+.message-error-container {
+  display: none;
+  background-color: var(--color-surface);
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+}
+.message-error-container .ph-warning-circle {
+  font-size: 50px;
+  color: var(--color-primary);
+}
+.message-error-container p {
+  color: var(--color-text-secondary);
+}
+.message-error-container h2 {
+  color: var(--color-text);
+  font-size: 1.2;
+  margin: 0.5rem 0;
+}
+.message-error-container.visible {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.profile-card {
+  background-color: var(--color-surface);
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+.profile-card__content {
+  flex: 1;
+  margin-top: 2rem;
+}
+
+.profile-card__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+  height: 100px;
+  width: 100%;
+  border-radius: 50%;
+  background-color: var(--color-text);
+}
+.profile-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.profile-card__user {
+  display: flex;
+  gap: 2rem;
+}
+.profile-card__joined {
+  color: var(--color-text-secondary);
+  text-align: left;
+  font-size: 12px;
+  margin-top: 1rem;
+}
+
+.profile-card__name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.profile-card__username {
+  font-size: 14px;
+  color: var(--color-primary);
+  text-decoration: none;
+  margin-top: 0.45rem;
+  display: block;
+}
+.profile-card__bio {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-top: 1rem;
+}
+.profile-card__stats {
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+}
+.profile-card__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+.profile-card__stat-label {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+.profile-card__stat-value {
+  font-weight: bold;
+  font-size: 17px;
+}
+.profile-card__links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-card__text {
+  color: var(--color-text-secondary);
+}
+.profile-card__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile-card__link .ph {
+  font-size: 20px;
+}
+/* media screen para tablet */
+@media screen and (min-width: 700px) {
+  .container {
+    width: 100%;
+    max-width: 668px;
+    margin: 0 auto;
+  }
+  .profile-card {
+    padding: 2rem 1.5rem;
+  }
+  .profile-card__name {
+    font-size: 1.5rem;
+  }
+  .input-search::placeholder,
+  .search__button {
+    font-size: 1rem;
+  }
+  .profile-card__text,
+  .profile-card__bio,
+  .profile-card__joined,
+  .profile-card__username,
+  .profile-card__stat-label {
+    font-size: 1rem;
+  }
+  .profile-card__stat-value {
+    font-size: 1.4rem;
+  }
+  .profile-card__stats {
+    justify-content: left;
+    gap: 5rem;
+    padding: 1rem 2rem;
+  }
+  .profile-card__stat {
+    align-items: start;
+    gap: 8px;
+  }
+  .profile-card__links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .profile-card__links > div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+  .profile-card__header {
+    position: relative;
+  }
+  .profile-card__joined {
+    position: absolute;
+    top: 1.5rem;
+    right: 0rem;
+  }
+  .profile-card__avatar {
+    max-width: 130px;
+    height: 130px;
+  }
+  .profile-card__name {
+    font-size: 1.5rem;
+  }
+  .profile-card__content {
+    margin-left: 9.6rem;
+    margin-top: 0;
+  }
+  .profile-card__bio {
+    margin-top: 0;
+  }
+  .profile-card__stats {
+    margin: 2rem 0;
+  }
+}
