@@ -132,10 +132,11 @@ body {
 }
 .message-error-container p {
   color: var(--color-text-secondary);
+  font-size: 14px;
 }
 .message-error-container h2 {
   color: var(--color-text);
-  font-size: 1.2;
+  font-size: 1rem;
   margin: 0.5rem 0;
 }
 .message-error-container.visible {
