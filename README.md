@@ -40,4 +40,7 @@ Durante o desenvolvimento, pratiquei e aprendi:
 - Experiência de usuário (UX) com mensagens de feedback.
 - Estilização responsiva para diferentes tamanhos de tela.
 
+  ## Visualizar projeto
+  [Ver projeto](https://devfinder-cyan.vercel.app/) | [Repositório](https://github.com/jamillyferreira/devfinder)
+
 
